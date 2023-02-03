@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofadi+One&display=swap');
+
 nav a{
     text-align: center;
-    color: black;
+    color: rgb(130, 227, 227);
     text-decoration: none;
+    padding: 35px;
+}
+#logo_link{
+    padding-top: 5px;
 }
 .home-title {
     color: black;
+    font-family: Sofadi One, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: black;
@@ -18,41 +27,69 @@ h4 {
 main section{
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 
 #background {
     height: 725px;
 }
 body {
     background-color: #eceae5;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #2d4888;
 }
 nav a:hover {
-    background-color:black;
+    background-color:rgb(56, 130, 147);
     color: blanchedalmond;
 }
 .book, .join {
     background-color: #396E94;
     color: blanchedalmond;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: black;
     color: blanchedalmond;
 }
+.card-img{
+    border: 10px solid #dba831;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
 #background {
-    background-color: #a2c8b0;
+    background-color: #dba831;
 }
 .msg {
     background-color: #396E94;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2, .msg p {
     color: black;
+    font-size: .8em;
+}
+.msg p{
+    padding: 15px;
+}
+h2 {
+    margin: 0;
 }
 footer {
     background-color: #396E94;
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     color: black;
@@ -67,8 +104,16 @@ footer a:hover {
 footer p a:hover {
     text-decoration: underline;
 }
-.icon, .logo {
+footer .social img{
+    padding-top: 15px;
+}
+.logo {
     width: 80px;
+    border-radius: 30px;
+}
+.icon{
+    width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
