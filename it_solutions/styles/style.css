@@ -41,6 +41,13 @@ header {
     grid-template-columns: 150px auto;
     background-color: #2d4888;
 }
+body {
+    background-color: #eceae5;
+    /*font-family: Sofadi one, Helvetica, sans-serif;*/
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
 nav a:hover {
     background-color:rgb(56, 76, 147);
     color: blanchedalmond;
@@ -50,6 +57,9 @@ nav a:hover {
     grid-template-columns: 2fr 1fr 3fr;
     grid-template-rows: 3fr 1fr 1fr 3fr 1fr 1fr 1fr;
     background-color: rgb(232, 244, 210);
+}
+.home-grid h2{
+    font-family: Sofadi one, Helvetica, sans-serif;
 }
 .home-img {
     width: 100%;
@@ -81,7 +91,7 @@ nav a:hover {
     margin: 0;
     font: bold;
     font-size: 2em;
-    font-family: var(--heading-font);
+    font-family: Sofadi one, Helvetica, sans-serif;
 }
 footer {
     background-color: #2d4888;

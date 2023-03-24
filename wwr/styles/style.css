@@ -331,13 +331,13 @@ For the contact us page
 
 form {
     /* Center the form on the page */
-    margin: 10px
+    margin: 10px;
     width: 400px;
     /* Form outline */
     padding: 1em;
     border: 2px solid #ccc;
     border-radius: 1em;
-    background-color:#f3ecdc
+    background-color:#f3ecdc;
   }
   
   ul {
