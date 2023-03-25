@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofadi+One&display=swap');
 
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a{
+  text-align: center;
+  color: #e3e7ea;
+  text-decoration: none;
+  padding: 35px;
+}
+#logo_link{
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+.logo {
+  width: 90px;
+  border-radius: 20px;
+}
+nav a:hover {
+    background-color:rgb(56, 76, 147);
+    color: blanchedalmond;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
