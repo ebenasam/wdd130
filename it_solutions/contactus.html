@@ -19,50 +19,87 @@
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
-        <div id="contactus-banner">
-            <div id="contactus-banner-box">
-                <img id="contactus-banner-img" src="images/contact_us.jpg" alt="image of a phone">
+        <div id="con-us">
+            <div id="con-us-box">
+                <img id="con-us-img" src="images/contactus.jpg" alt="image of contact">
             </div>
+            <section id="con-us-msg">
+                <h1 class="con-us-title">Contact Us</h1>
+                
+            </section>
         </div>
         <main class="contactus-grid">
             <div id="contactus-background"></div>
-            <section class="web-design-msg">
+            <section class="web-n-software-design-msg">
                 <h2>FOR WEB AND SOFTWARE DEVELOPMENT</h2>
                 <h3>Contact</h3>
                 <p>Web and Software Department.</p>
                 <p>2246 Old John Sabath Road,</p>
                 <p>Sekondi-Takoradi.</p>
                 <p>Ghana, West Africa.</p>
+                <p>Telephone: +233 24 546 6843</p>
             </section>
-            <section class="networking-msg">
+            <section class="networking-hardware-msg">
                 <h2>FOR NETWORKING</h2>
                 <h3>Contact</h3>
                 <p>Networking and HardWare Department.</p>
                 <p>2246 Old John Sabath Road,</p>
                 <p>Sekondi-Takoradi.</p>
                 <p>Ghana, West Africa.</p>
+                <p>Telephone: +233 20 777 3312</p>
             </section>
+            <div id="feedback"></div>
             <form action="/it_solutions/contactus.html" method="post">
                 <ul>
                     <li>
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="user_name" />
+                        <input type="text" id="name" name="user_name" placeholder="Your full name"/>
                     </li>
                     <li>
                         <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email" />
+                        <input type="email" id="mail" name="user_email" placeholder="Your email" />
                     </li>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="empty"></option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="algeria">Algeria</option>
+                        <option value="australia">Australia</option>
+                        <option value="angola">Angola</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="benin">Benin</option>
+                        <option value="botswana">Botswana</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="togo">Togo</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="tajikistan">Tajikistan</option>
+                        <option value="tanzania">Tanzania</option>
+                        <option value="tunisia">Tunisia</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="uganda">Uganda</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="spain">Spain</option>
+                        <option value="senegal">Senegal</option>
+                        <option value="south_africa">South Africa</option>
+                        <option value="rwanda">Rwanda</option>
+                        <option value="oman">Oman</option>
+                        <option value="zimbabwa">Zimbabwa</option>
+                        
+                    </select>
                     <li>
                         <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
+                        <textarea id="msg" name="user_message" placeholder="Write something..."></textarea>
                     </li>
                     <li class="button">
-                        <button type="submit">Submit message</button>
+                        <button type="submit">Submit</button>
                     </li>
                 </ul>
             </form>
-           
-              </div>
+        
+              
         </main>
         <footer>
             <p>EbenAsam-IT Solutions &copy; 2023 - Ebenezer Asamoah</p>
@@ -81,5 +118,22 @@
             </div>
         </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
